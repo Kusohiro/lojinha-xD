@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Lojinha</title>
+</head>
+<body id="corpo">
+<table>   
+<p class="joaquim" id="nome">visitante</p>
+<input class="joaquim" type="text" id="visitante">
+<button onclick="visita()">alterar nome</button><br>
+	<br>
+
+</table>
+<div id="pai1">
+<div id="produto1">   
+	<p><button onclick="remover1()">Remover shiro</button></p>
+        Shiro (figure)<br>
+
+            <img src="../img/shiro.jpg" alt="shirofigure.jpg">
+            <p id="shiro"> 0 </p>
+            <p >preço unitário: 349.99</p> <h5 id ="preco1">0</h5>
+	
+            <button onclick="acao('+'), preco('+')"> + </button>
+            <button onclick="acao('-'), preco('-')"> - </button>
+	</div>
+	</div>
+	<br>
+	<div id="pai2">
+		<div id="produto2">
+			<p><button onclick="remover2()">Remover cthulhu anime girl</button></p>
+	       Cthulhu anime girl (figure) <br>
+            <img src="../img/cthulhuj.jpg" alt="cthulhuanime.jpg">
+            <p id="cthulhu"> 0 </p>
+            preço unitário: 299.99<h5 id ="preco2">0</h5>
+
+            <button onclick="acao('++'), preco('++')"> + </button>
+            <button onclick="acao('--'), preco('--')"> - </button>
+	</div>
+ </div>
+	<br>
+ <button onclick="finalizarCompra()">finalizar compra</button>
+<script src="../js/lojinha.js"></script>
+</body>
+</html>
